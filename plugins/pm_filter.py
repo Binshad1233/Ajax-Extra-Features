@@ -1400,7 +1400,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Movie Name= {search},Requested By :{username}Group :Cinima Bucket"
+        cap = f"Movie Name= {search}"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo="https://telegra.ph/file/e4d152f1ee2c5fe9a9b8c.jpg", caption=cap[:1024],
