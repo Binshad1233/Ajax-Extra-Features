@@ -1405,7 +1405,7 @@ async def auto_filter(client, msg, spoll=False):
 🚀 Group :Cinima Bucket"
     if imdb and imdb.get('poster'):
         try:
-            await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+            await message.reply_photo(photo="https://telegra.ph/file/e4d152f1ee2c5fe9a9b8c.jpg, caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
