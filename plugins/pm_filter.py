@@ -1400,10 +1400,11 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Movie Name= {search}"
+        cap = f"♻Movie Name= {search}
+        ♻Requested By : {username}"
     if imdb and imdb.get('poster'):
         try:
-            await message.reply_photo(photo="https://telegra.ph/file/e4d152f1ee2c5fe9a9b8c.jpg", caption=cap[:1024],
+            await message.reply_photo(photo="https://telegra.ph/file/8fd4b31c202ded61568b5.jpg", caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
