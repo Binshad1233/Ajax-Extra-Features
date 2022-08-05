@@ -39,15 +39,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💃 ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ 💃', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx')
             ],[
             InlineKeyboardButton('⭕ CHΛИИΞL ⭕', url='https://t.me/cinimabucketv1'),
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-            ],[
             InlineKeyboardButton('✅ GᏒԾUᎮ ✅', url='https://t.me/cinimabucketv1')
-        ]]   
+            ],
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_video(
             video=random.choice(PICS),
@@ -81,14 +80,13 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons =[[
-            InlineKeyboardButton('💃 ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ 💃', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx')
             ],[
             InlineKeyboardButton('⭕ CHΛИИΞL ⭕', url='https://t.me/cinimabucketv1'),
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-            ],[
             InlineKeyboardButton('✅ GᏒԾUᎮ ✅', url='https://t.me/cinimabucketv1')
+            ],
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
