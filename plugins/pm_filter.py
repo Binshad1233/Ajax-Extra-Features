@@ -751,7 +751,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('✅ GᏒԾUᎮ ✅', url='https://t.me/cinimabucketv1')
-            ],
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
