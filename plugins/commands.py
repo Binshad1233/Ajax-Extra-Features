@@ -45,7 +45,7 @@ async def start(client, message):
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('✅ GᏒԾUᎮ ✅', url='https://t.me/cinimabucketv1')
-            ],
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_video(
@@ -86,7 +86,7 @@ async def start(client, message):
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('✅ GᏒԾUᎮ ✅', url='https://t.me/cinimabucketv1')
-            ],
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
