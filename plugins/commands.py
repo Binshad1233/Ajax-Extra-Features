@@ -39,12 +39,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx')
-            ],[
-            InlineKeyboardButton('⭕ CHΛИИΞL ⭕', url='https://t.me/cinimabucketv1'),
+            InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx') 
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('✅ GᏒԾUᎮ ✅', url='https://t.me/cinimabucketv1')
+            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
             
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
@@ -79,13 +77,11 @@ async def start(client, message):
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        buttons =[[
-            InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx')
-            ],[
-            InlineKeyboardButton('⭕ CHΛИИΞL ⭕', url='https://t.me/cinimabucketv1'),
+        buttons = [[
+            InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx') 
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('✅ GᏒԾUᎮ ✅', url='https://t.me/cinimabucketv1')
+            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
             
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
