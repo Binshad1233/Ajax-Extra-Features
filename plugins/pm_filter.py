@@ -245,7 +245,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.audio.edit('https://s171.123apps.com/aconv/d/s171hDmJVnjF_mp3_9sHxj3HT.mp3')
+            k = await query.message.edit('അഡ്മിനെ കോൺടാക്ട് ചെയ്യൂ')
             await asyncio.sleep(10)
             await k.delete()
 
