@@ -1459,7 +1459,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("https://media.discordapp.net/attachments/964119741604188181/1006579846761156618/sticker.webp?width=325&height=325",
+    await msg.reply("https://lh3.googleusercontent.com/meMaSfdrkeG-vtR-ce8jpoz5DlqYuK3YRR4FCxSP3XN-_ouRrELrL0Czbcab7ovEgUmSbg=s89",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
