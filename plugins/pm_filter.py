@@ -1460,6 +1460,8 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply_photo("https://telegra.ph/file/13040ca59fe4a5238d1f7.jpg",
+     ],[
+     await msg.reply_audio("https://s170.123apps.com/aconv/d/s170L2FLkOyI_mp3_DNETRwhx.mp3",
                    reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
