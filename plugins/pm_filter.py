@@ -174,7 +174,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"⭕[{get_size(file.file_size)}] ➡ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"⭕[{get_size(file.file_size)}]  {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -825,8 +825,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
             ],[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
-            ],[
             InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -872,8 +870,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
             InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
-            ],[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
             ],[
             InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
         ]]
@@ -1327,7 +1323,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"⭕[{get_size(file.file_size)}] ➡ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"⭕[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
