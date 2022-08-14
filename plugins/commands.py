@@ -61,13 +61,10 @@ async def start(client, message):
             return
         btn = [
             [
-                InlineKeyboardButton(
-                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_link
-                )
-            ]
-        ]
-
-              InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
+                buttons = [[
+            InlineKeyboardButton('💃JOIN💃', url=f'https://t.me/+ZLBf-DxPSNEyNjM1') 
+            ],[      
+            InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
             text="🥰ആദ്യം താഴെ കാണുന്ന GROUPL JOIN ചെയ്യുക എന്നിട്ട് (cinima bucket )സിനിമ ബക്കറ്റിൽ പോയി താങ്കൾ ആദ്യം request ചെയ്ത (movie) മൂവി ഒന്നൂടെ request ചെയ്യുക 🥰!",
             )
         return
