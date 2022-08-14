@@ -61,11 +61,19 @@ async def start(client, message):
             return
         btn = [
             [
-                buttons = [[
-            InlineKeyboardButton('💃JOIN💃', url=f'https://t.me/+ZLBf-DxPSNEyNjM1') 
-            ],[      
-            InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
+                InlineKeyboardButton(
+                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_link
+                )
+            ]
+        ]
+
+        if message.command[1] != "subscribe":
+            btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", url='https://t.me/cinimabucketv1')
+        await client.send_message(
+            chat_id=message.from_user.id,
             text="🥰ആദ്യം താഴെ കാണുന്ന GROUPL JOIN ചെയ്യുക എന്നിട്ട് (cinima bucket )സിനിമ ബക്കറ്റിൽ പോയി താങ്കൾ ആദ്യം request ചെയ്ത (movie) മൂവി ഒന്നൂടെ request ചെയ്യുക 🥰!",
+            reply_markup=InlineKeyboardMarkup(btn),
+            parse_mode="markdown"
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
