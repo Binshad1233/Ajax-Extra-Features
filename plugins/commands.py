@@ -68,7 +68,7 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe":
-              ([InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
+              InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
             text="🥰ആദ്യം താഴെ കാണുന്ന GROUPL JOIN ചെയ്യുക എന്നിട്ട് (cinima bucket )സിനിമ ബക്കറ്റിൽ പോയി താങ്കൾ ആദ്യം request ചെയ്ത (movie) മൂവി ഒന്നൂടെ request ചെയ്യുക 🥰!",
             )
         return
