@@ -69,7 +69,7 @@ async def start(client, message):
 
         if message.command[1] != "subscribe":
             btn.append([InlineKeyboardButton(" 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 ", callback_data=f"https://t.me/cinimabucketv1"#{message.command[1]}")])
-        await client.send_message(
+                                             
             chat_id=message.from_user.id,
             text="🥰ആദ്യം താഴെ കാണുന്ന GROUPL JOIN ചെയ്യുക എന്നിട്ട് (cinima bucket )സിനിമ ബക്കറ്റിൽ പോയി താങ്കൾ ആദ്യം request ചെയ്ത (movie) മൂവി ഒന്നൂടെ request ചെയ്യുക 🥰!",
             reply_markup=InlineKeyboardMarkup(btn),
