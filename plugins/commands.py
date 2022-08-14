@@ -68,10 +68,9 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!",
+            text="🥰ആദ്യം താഴെ കാണുന്ന GROUPL JOIN ചെയ്യുക എന്നിട്ട് (cinima bucket )സിനിമ ബക്കറ്റിൽ പോയി താങ്കൾ ആദ്യം request ചെയ്ത (movie) മൂവി ഒന്നൂടെ request ചെയ്യുക 🥰!",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
