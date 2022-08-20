@@ -41,7 +41,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx') 
             ],[      
-            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),  
+            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='fun'),  
             InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
             
         ]]
@@ -80,7 +80,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx') 
             ],[      
-            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='fun'),
             InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
             
         ]]
