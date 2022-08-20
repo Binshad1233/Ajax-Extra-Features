@@ -41,7 +41,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('💃 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ💃', url=f'https://t.me/binshadx') 
             ],[      
-            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', reply_photo("https://telegra.ph/file/9bd7c804fec2a2a278cfd.jpg'),
+            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),  
             InlineKeyboardButton('✅ ɢʀᴏᴜᴘ ✅', url='https://t.me/cinimabucketv1')
             
         ]]
